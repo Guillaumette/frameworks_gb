@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Мой сайт</p>
+    </footer>
+</body>
+</html>

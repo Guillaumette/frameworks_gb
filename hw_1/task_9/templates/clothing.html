@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Одежда{% endblock %}
+
+{% block content %}
+    <h2>Одежда</h2>
+    <ul>
+        <li><a href="/jacket">Куртка</a></li>
+    </ul>
+    {% for cl in clothes %}
+        <div>
+            <h3>{{ cl.name }}</h3>
+            <p> {{ cl.description }}</p>
+            <p><i>{{ cl.price }}</i></p>
+        </div>
+    {% endfor %}
+{% endblock %}

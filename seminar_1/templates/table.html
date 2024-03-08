@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <table border="solid">
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Возраст</th>
+            <th>Средний балл</th>
+            {% for student in students %}
+                <tr>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.last_name }}</td>
+                    <td>{{ student.age }}</td>
+                    <td>{{ student.avg_mark }}</td>
+                </tr>
+            {% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
