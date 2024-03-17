@@ -1,4 +1,4 @@
-from lection_1.app_01 import app
+from hw_3.app import app
 
 if __name__ == '__main__':
     app.run(debug=True)
